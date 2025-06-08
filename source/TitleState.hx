@@ -36,6 +36,8 @@ class TitleState extends MusicBeatState
 	public static var volumeDownKeys:Array<FlxKey> = [FlxKey.NUMPADMINUS, FlxKey.MINUS];
 	public static var volumeUpKeys:Array<FlxKey> = [FlxKey.NUMPADPLUS, FlxKey.PLUS];
 
+	static public var soundExt:String = ".ogg";
+
 	static var initialized:Bool = false;
 
 	var blackScreen:FlxSprite;
