@@ -625,54 +625,17 @@ class PlayState extends MusicBeatState
 					bg.antialiasing = false;
 					add(bg);
 				}
-		case 'minecraft':
-			defaultCamZoom = 0.9;
-			curStage = 'minecraft';
-			var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image("flatland"));
-			// bg.setGraphicSize(Std.int(bg.width * 2.5));
-			// bg.updateHitbox();
-			bg.antialiasing = true;
-			bg.scrollFactor.set(0.9, 0.9);
-			bg.active = false;
-			bg.screenCenter(XY);
-			add(bg);
-		case 'checker':
-			defaultCamZoom = 0.66;
-			curStage = 'checker';
-			var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image("redfloor"));
-			// bg.setGraphicSize(Std.int(bg.width * 2.5));
-			// bg.updateHitbox();
-			bg.antialiasing = true;
-			// bg.scrollFactor.set(0.66, 0.66);
-			bg.active = false;
-			bg.screenCenter(XY);
-			add(bg);
-		case 'crashStage':
-			defaultCamZoom = 0.8;
-			curStage = 'crashStage';
-			var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image("rockslide"));
-			bg.antialiasing = true;
-			bg.active = false;
-			bg.screenCenter(XY);
-			add(bg);
-		case 'fnafStage':
-			defaultCamZoom = 0.85;
-			curStage = 'fnafStage';
-			var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image("bedroom"));
-			bg.antialiasing = true;
-			bg.active = false;
-			bg.setGraphicSize(Std.int(bg.width * 0.9));
-			bg.updateHitbox();
-			bg.screenCenter(XY);
-			add(bg);
-		case 'skeletonStage':
-			defaultCamZoom = 0.8;
-			curStage = 'skeletonStage';
-			var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image("darkness"));
-			bg.antialiasing = true;
-			bg.active = false;
-			bg.screenCenter(XY);
-			add(bg);
+			case 'blender':
+	         		defaultCamZoom = 0.4;
+		        	curStage = 'blender';
+	         		var bg:FlxSprite = new FlxSprite(0, -550).loadGraphic('blender2.png');
+	         		bg.screenCenter(X);
+	         		// bg.setGraphicSize(Std.int(bg.width * 2.5));
+	         		// bg.updateHitbox();
+	         		bg.antialiasing = true;
+	         		bg.scrollFactor.set(0.9, 0.9);
+	         		bg.active = false;
+	         		add(bg);
 		}
 
 		if(isPixelStage) {
